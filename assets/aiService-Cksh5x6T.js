@@ -1,4 +1,4 @@
-import{G as y}from"./main-DmVnpbOQ.js";const w=async(i,s)=>{if(!i)throw new Error("API Key is missing");const l=i.replace(/[^\x21-\x7E]/g,"").replace(/["']/g,"").trim(),p=new y(l),r=["gemini-3-flash-preview","gemini-3-pro-preview"];let t=null;for(const e of r)try{console.log(`[Receipt Scan] Attempting with model: ${e}`);const o=p.getGenerativeModel({model:e}),h=s.split(",")[1]||s,u=`
+import{G as y}from"./main-DPw3DRx1.js";const w=async(i,s)=>{if(!i)throw new Error("API Key is missing");const l=i.replace(/[^\x21-\x7E]/g,"").replace(/["']/g,"").trim(),p=new y(l),r=["gemini-3-flash-preview","gemini-3-pro-preview"];let t=null;for(const e of r)try{console.log(`[Receipt Scan] Attempting with model: ${e}`);const o=p.getGenerativeModel({model:e}),h=s.split(",")[1]||s,u=`
             Analyze this receipt image (likely Vietnamese).
             1. Extract ALL items in the **EXACT ORDER** they appear on the receipt (Top to Bottom).
             2. For 'price', extract the **LINE TOTAL** (Final amount for that line, i.e., Quantity * Unit Price), NOT the unit price.
